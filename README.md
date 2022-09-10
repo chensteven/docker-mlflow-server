@@ -1,5 +1,22 @@
 # docker-mlflow-server
 
+## Instructions (updated by Steven from Wecloud)
+
+```bash
+## 1. Build our own image
+docker build -t mlflow_wecloud .
+
+## 2. Run container at port 5001
+docker run -it --rm -p 5001:5000 -v mlflow --name mlflow-server mlflow_wecloud
+
+## 3. Good to go.
+
+## OR (if you're lazy - just run on script :D)
+
+## bash run.sh
+```
+
+
 [![Docker Cloud Automated build](https://img.shields.io/docker/cloud/automated/atcommons/mlflow-server)](https://hub.docker.com/r/atcommons/mlflow-server)
 [![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/atcommons/mlflow-server)](https://hub.docker.com/r/atcommons/mlflow-server)
 [![Docker Image Size (latest by date)](https://img.shields.io/docker/image-size/atcommons/mlflow-server)](https://hub.docker.com/r/atcommons/mlflow-server)
