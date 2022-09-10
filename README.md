@@ -3,17 +3,19 @@
 ## Instructions (updated by Steven from Wecloud)
 
 ```bash
-## 1. Build our own image
+
+## Step 0. Git clone this repo
+
+## Step 1. Build our own image
 docker build -t mlflow_wecloud .
 
-## 2. Run container at port 5001
+## Step 2. Run container at port 5001
 docker run -it --rm -p 5001:5000 -v mlflow --name mlflow-server mlflow_wecloud
 
-## 3. Good to go.
+## Step 3. Good to go.
 
-## OR (if you're lazy - just run on script :D)
-
-## bash run.sh
+## OR (if you're lazy - just run one script :D)
+bash run.sh
 ```
 
 
