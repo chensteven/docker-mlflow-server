@@ -10,7 +10,7 @@
 docker build -t mlflow_wecloud .
 
 ## Step 2. Run container at port 5001
-docker run -it --rm -p 5001:5000 -v mlflow --name mlflow-server mlflow_wecloud
+docker run -it --rm -p 5001:5000 -v ${PWD}/data:/mlflow --name mlflow-server mlflow_wecloud
 
 ## Step 3. Good to go.
 
